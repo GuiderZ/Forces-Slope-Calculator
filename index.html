@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet"> 
+    <title>Forces Calculator</title> 
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1 class="title">แรงที่ทำให้วัตถุเริ่มเคลื่อนที่</h1>
+        <h2 class="title2">(ด้วยความเร็วคงที่บนพื้นเอียง)</h2>
+        <h3 class="info">ค่า g = 9.81 m/s²</h3>
+        <p class="1">น้ำหนักมวล <input type="number" onfocus="this.value=''" id="mass"> kg</p>
+        <p class="2">มุมของพื้นเอียง <input type="number" onfocus="this.value=''" id="angle"> degree</p>
+        <p class="3">ค่าสัมประสิทธิ์แรงเสียดทานจลน์ <input type="number" onfocus="this.value=''" id="uk"> (หากเป็นผิวลื่นให้ใส่ 0)</p>
+        <div class="loader">
+            <img class='imgload'src="loading.gif" alt="">
+        </div>
+        <p id="res"></p>
+        <button id="submit" class="btn">Calculate</button>
+        <button id="clear" class="btn">Clear</button><br>
+        <img src="pull.png" alt="" class="pic">
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
